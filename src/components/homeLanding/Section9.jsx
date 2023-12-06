@@ -1,0 +1,81 @@
+import React, { useState, useEffect,useRef } from "react";
+
+const Counter 
+
+= ({ initialValue, finalValue }) => {
+  const [count, setCount] = useState(initialValue);
+  const digits = count.toString().split('').map(Number);
+
+  const counterRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startCounting();
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const startCounting = () => {
+    const interval = setInterval(() => {
+      setCount((prevCount) => (prevCount < finalValue ? prevCount + 1 : finalValue));
+    }, 50); // Adjust the interval as needed
+
+    return () => clearInterval(interval);
+  };
+
+ 
+
+  return (
+    <div  ref={counterRef} 
+      className="bg-white h-[480px]  flex items-center justify-around font-lexend
+    "
+    >
+      <div className="number-counter font-lexend">
+        <span className="lg:text-[100px] font-semibold">{count}</span>
+        <p className="text-[#202020] lg:text-xl font-mutka">
+          Lorem ipsum dolor <br /> amet consectetur.
+        </p>
+      </div>
+      {/* <div className="number-counter">
+        <span className="lg:text-[100px] font-semibold">{count2}</span>
+        <p className="text-[#202020] lg:text-xl font-mutka ">
+          Lorem ipsum dolor <br /> amet consectetur.
+        </p>
+      </div>
+      <div className="number-counter">
+        <span className="lg:text-[100px] font-semibold">{count3}</span>
+        <p className="text-[#202020] lg:text-xl font-mutka ">
+          Lorem ipsum dolor <br /> amet consectetur.
+        </p>
+      </div> */}
+    </div>
+  );
+};
+
+const Section9 = () => {
+  return (
+    <div className="flex justify-around items-center bg-white">
+      <Counter initialValue={0} finalValue={100} />
+      <Counter initialValue={50} finalValue={150} />
+      <Counter initialValue={25} finalValue={75} />
+    </div>
+  );
+};
+
+export default Section9;
+
+

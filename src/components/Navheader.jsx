@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navheader = () => {
 
@@ -35,7 +36,9 @@ const Navheader = () => {
 <div className="lg:flex lg:items-center lg:gap-7">
 {menuData.map((item,key)=>(
         <ul className='text-white lg:text-lg'>
+        <Link to={item.link}>
             <li className='' key={item.id}>{item.name}</li>
+        </Link>
         </ul>
 ))}
 </div>

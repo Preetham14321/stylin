@@ -17,6 +17,7 @@ const Section2 = () => {
         infinite: true,
         slidesToShow: 8,
         slidesToScroll: 1,
+        speed:1000,
         autoplay: true,
         autoplaySpeed: 1200, // Set the duration for automatic scrolling in milliseconds
         responsive: [
@@ -50,12 +51,12 @@ const Section2 = () => {
       const brands = [Brand1,Brand2,Brand3,Brand4,Brand5,Brand6,Brand7,Brand8,Brand9]
     
       return (
-        <div  className='overflow-hidden lg:py-10'>
+        <div  className='overflow-hidden lg:py-10 '>
       <Slider {...settings}>
           {brands.map((brand, index) => (
-            <div key={index} className="brand-item">
+            <div key={index} className="">
               {/* Render your brand component here */}
-              <img src={brand} alt='' />
+              <img src={brand} alt='' className='w-32  h-full' />
             </div>
           ))}
         </Slider>

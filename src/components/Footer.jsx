@@ -93,7 +93,7 @@ const Footer = () => {
     ]
   return (
 
-    <footer className=' bg-[#202020] w-full lg:h-80 lg:px-24 lg:pt-12 flex justify-between '>
+    <footer className=' bg-[#202020] w-full lg:h-96 lg:px-24 lg:pt-12 flex justify-between '>
    <div className="text-white space-y-3">
 
      <img src={heroSmallIc} alt="logo" className='w-16 ' />
