@@ -1,8 +1,11 @@
 import React from 'react'
+import Navheader from '../components/Navheader'
 
 const Blogs = () => {
   return (
-    <div>Blogs</div>
+<main className="">
+  <Navheader custClass='bg-white text-black'/>
+</main>
   )
 }
 

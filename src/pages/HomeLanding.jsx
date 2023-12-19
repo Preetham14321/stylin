@@ -17,17 +17,21 @@ const HomeLanding = () => {
    
 
   return (
-  <div className="bg-[#020202] h-screen">
+  <div className="bg-[#0 20202]  h-screen overflow-x-hidden ">
+   <div className="z-50">
+
     <Navheader/>
+   </div>
 
 {/* ------------- Home Main Page --------------- */}
 <div className="">
     <Section1/>
     
 </div>
+<div className="hidden">
 
 {/* ------------ Brand Carousel --------------- */}
-<div className=" ">
+<div className=" lg:pt-20">
     <Section2/>
     
 </div>
@@ -70,6 +74,7 @@ const HomeLanding = () => {
     <div className="">
         <Footer/>
     </div>
+</div>
   </div>
   )
 }

@@ -6,14 +6,14 @@ import Footer from "../components/Footer";
 const Team = () => {
   return (
     <main className="">
-      <Navheader />
-        <div className=" relative ">
+      <Navheader  />
+        <div className="h-screen relative ">
           <video autoPlay muted loop playsInline className="">
             <source src={teamHero} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div
-            className="absolute h-full w-full top-0 flex justify-center items-center"
+            className="absolute h-[114%] w-full top-0 flex justify-center items-center"
             style={{ background: "rgba(32, 32, 32, 0.82)" }}
           >
             <div className="lg:pb-40">
@@ -36,7 +36,7 @@ const Team = () => {
 
     {/* ------------ Team Images ----------- */}
 
-    <div className="lg:pb-28">
+    <div className="lg:pb-28 lg:pt-28">
         <Section1/>
     </div>
 

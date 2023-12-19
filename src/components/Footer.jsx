@@ -1,6 +1,7 @@
 import React from 'react'
 import heroSmallIc from '../assets/svg/heroSmIc.svg'
 import { FaInstagram,FaLinkedinIn  } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -43,7 +44,7 @@ const Footer = () => {
         {
             id:3,
             name:'FAQs',
-            link:''
+            link:'/faq'
         }
     ]
 
@@ -122,7 +123,9 @@ const Footer = () => {
     {helpCenData.map((item,key)=>(
         <ul>
             <li className="lg:text-2xl font-semibold">{item.title}</li>
+            <Link to={item.link}>
             <li className="lg:text-lg">{item.name}</li>
+            </Link>
         </ul>
     ))}
     </div>
