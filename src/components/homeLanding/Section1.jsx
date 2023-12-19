@@ -3,7 +3,7 @@ import HeroBgV from "../../assets/video/BrushSparkle.mp4";
 
 const Section1 = () => {
   return (
-    <main className=" h-screen   relative " style={{ backgroundClip: `url(${HeroBgV})` }}>
+    <main className=" lg:h-screen   relative " style={{ backgroundClip: `url(${HeroBgV})` }}>
       <video autoPlay muted loop playsInline className=" mt-14 lg:mt-0 lg:h-fit">
         <source src={HeroBgV} type="video/mp4" />
        

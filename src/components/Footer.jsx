@@ -94,60 +94,73 @@ const Footer = () => {
     ]
   return (
 
-    <footer className=' bg-[#202020] w-full lg:h-96 lg:px-24 lg:pt-12 flex justify-between '>
-   <div className="text-white space-y-3">
-
+    <footer className=' bg-[#202020] w-full lg:h-96 px-6 lg:px-24 pt-5 lg:pt-12 lg:flex justify-between '>
+   <div className="text-white pb-5 lg:pb-0   lg:block space-y-3">
      <img src={heroSmallIc} alt="logo" className='w-16 ' />
+<div className="flex lg:block items-center justify-between ">
+<div className="space-y-3">
+
      <h1 className="font-michroma lg:text-2xl tracking-wider  text-white" >STYLIN</h1>
-     <p className="">stylinlogin@gmail.com</p>
+     <p className="lg:pb-2">stylinlogin@gmail.com</p>
+</div>
+
+<div className="space-y-3">
+
      <p className="">+91 86880 55328</p>
-     <div className="lg:flex items-center lg:gap-2">
+     <div className=" flex items-center gap-2">
      <FaInstagram />
      <FaLinkedinIn  />
      </div>
-     <p className="text-sm lg:pt-1">©2023 STYLIN All rights reserved.</p>
+</div>
+
+</div>
+
+     <p className=" hidden lg:block text-sm lg:pt-1">©2023 STYLIN All rights reserved.</p>
    </div>
 
- <div className="text-white  flex gap-20 lg:pr-7 ">
-   <div className="space-y-5">
+ <div className="text-white grid grid-cols-2 lg:flex gap-y-10 gap-x-12 lg:gap-20 lg:pr-7 ">
+   <div className="space-y-2 lg:space-y-5">
 
     {mediaData.map((item,key)=>(
         <ul>
-            <li className="lg:text-2xl font-semibold">{item.title}</li>
-            <li className="lg:text-lg">{item.name}</li>
+            <li className="text-[17px] lg:text-2xl font-semibold">{item.title}</li>
+            <li className="text-[15px] w-max lg:text-lg">{item.name}</li>
         </ul>
     ))}
    </div>
-   <div className="space-y-5">
+   <div className="space-y-2 lg:space-y-5">
 
     {helpCenData.map((item,key)=>(
         <ul>
-            <li className="lg:text-2xl font-semibold">{item.title}</li>
+            <li className="text-[17px] lg:text-2xl font-semibold">{item.title}</li>
             <Link to={item.link}>
-            <li className="lg:text-lg">{item.name}</li>
+            <li className="text-[15px] w-max lg:text-lg">{item.name}</li>
             </Link>
         </ul>
     ))}
     </div>
-   <div className="space-y-5">
+   <div className="space-y-2 lg:space-y-5">
 
     {joinStyData.map((item,key)=>(
         <ul>
-            <li className="lg:text-2xl font-semibold">{item.title}</li>
-            <li className="lg:text-lg">{item.name}</li>
+            <li className=" text-[17px] lg:text-2xl font-semibold">{item.title}</li>
+            <li className="text-[15px] w-max lg:text-lg">{item.name}</li>
         </ul>
     ))}
     </div>
-   <div className="space-y-5">
+   <div className="space-y-2 lg:space-y-5 ">
 
     {downloadData.map((item,key)=>(
         <ul>
-            <li className="lg:text-2xl font-semibold">{item.title}</li>
-            <li className="lg:text-lg">{item.name}</li>
+            <li className="text-[17px] lg:text-2xl font-semibold">{item.title}</li>
+            <li className="text-[15px] w-max lg:text-lg">{item.name}</li>
         </ul>
     ))}
+
  </div>
  </div>
+ <p className=" lg:hidden w-full text-white text-center text-sm pb-3 pt-10">©2023 STYLIN All rights reserved.</p>
+
 
     </footer>
   )

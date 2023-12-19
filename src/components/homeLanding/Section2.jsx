@@ -51,12 +51,12 @@ const Section2 = () => {
       const brands = [Brand1,Brand2,Brand3,Brand4,Brand5,Brand6,Brand7,Brand8,Brand9]
     
       return (
-        <div  className='overflow-hidden lg:py-10 '>
+        <div  className='overflow-hidden lg:py-10  '>
       <Slider {...settings}>
           {brands.map((brand, index) => (
             <div key={index} className="">
               {/* Render your brand component here */}
-              <img src={brand} alt='' className='w-32  h-full' />
+              <img src={brand} alt='' className='w-24 lg:w-32  h-full' />
             </div>
           ))}
         </Slider>

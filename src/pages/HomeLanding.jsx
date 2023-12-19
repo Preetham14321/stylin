@@ -28,13 +28,13 @@ const HomeLanding = () => {
     <Section1/>
     
 </div>
-<div className="hidden">
 
 {/* ------------ Brand Carousel --------------- */}
-<div className=" lg:pt-20">
+<div className="pt-5  lg:pt-20">
     <Section2/>
     
 </div>
+<div className=" ">
 
 {/* ----------- Online Services ----------------- */}
 <div className="bg-[#020202] lg:pt-20">

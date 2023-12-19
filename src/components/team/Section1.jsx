@@ -55,17 +55,17 @@ const teamData = [
 
   return (
    <div className="">
-    <h1 className="text-[#020202] font-lexend  text-center lg:py-12 lg:text-4xl">
+    <h1 className="text-[#020202] font-lexend  text-center py-8 lg:py-12 text-lg lg:text-4xl">
     Meet Our Team
     </h1>
-    <div className="grid grid-cols-3 gap-y-20 justify-center items-center m-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-20 justify-center items-center m-auto">
         {
 
             teamData.map((item,index)=>(
 
           <div className={`col-span-${index+1&&item.id===7 ? '3' : '1'}  flex flex-col items-center m-auto`}>
-        <img   key={index} src={item.img} alt="" className={`  m-auto  w-64`} />
-        <h2 className="text-[#020202] lg:pt-5 lg:pb-1 font-lexend font-semibold text-center lg:text-xl">
+        <img   key={index} src={item.img} alt="" className={`  m-auto w-44 lg:w-56`} />
+        <h2 className="text-[#020202] pt-5 lg:pb-1 font-lexend font-semibold text-center lg:text-xl">
           {item.name}
         </h2>
         <p className="font-mutka lg:text-lg text-[#020202] text-center">{item.role}</p>
