@@ -17,7 +17,7 @@ const HomeLanding = () => {
    
 
   return (
-  <div className="bg-[#0 20202]  h-screen overflow-x-hidden ">
+  <div className="bg-[#02 0202]  h-screen overflow-x-hidden ">
    <div className="z-50">
 
     <Navheader/>

@@ -11,6 +11,7 @@ import Team from "./pages/Team";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import ScrollToTop from "./components/ScrollToTop";
+import BlogEntry from "./components/blogs/blogentry/BlogEntry";
 
 
 function App() {
@@ -38,7 +39,8 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/team" element={<Team/>} />
         <Route path="/faq" element={<FAQ/>} />
-        <Route path="/blogs" element={<Blogs/>} />
+        <Route path="/blogs" element={<Blogs/>} />x
+        <Route path="/blog/Entry" element={<BlogEntry/>} />x
         {/* Add more routes for your components/pages */}
   </Routes>
   </ScrollToTop>
