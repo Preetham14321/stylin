@@ -1,5 +1,6 @@
 import React from 'react'
 import Sec3Hero from '../../assets/svg/sec3hero.svg'
+import { Link } from 'react-router-dom'
 
 const Section3 = () => {
   return (
@@ -11,9 +12,11 @@ const Section3 = () => {
     <p className="font-mukta lg:text-[20px] lg:leading-[28px] lg:py-3 text-white">
     Seamless Beauty at Your Fingertips: Style your schedule <br /> effortlessly with Stylin’s online booking magic. Beauty  <br /> appointments with reviews and price Comparisons are  <br /> on your way with just a tap.
     </p>
+    <Link to='/feature/onlineservice'>
     <button className="bg-white lg:px-8 lg:py-2 text-[#84CC16] font-lexend rounded-[4px] lg:mt-5">
         Learn More
     </button>
+    </Link>
   </main>
   )
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Sec4hero from "../../assets/svg/sec4hero.svg";
+import { Link } from "react-router-dom";
 const Section4 = () => {
   return (
     <main
@@ -23,9 +24,11 @@ const Section4 = () => {
           appointments, tracking growth, and <br /> exploring effective
           marketing opportunities.
         </p>
+        <Link to="/feature/salonservice" >
         <button className="bg-white lg:px-8 lg:py-2 text-[#38BDF8] font-lexend rounded-[4px] lg:mt-5">
           Learn More
         </button>
+        </Link>
       </div>
     </main>
   );

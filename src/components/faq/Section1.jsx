@@ -6,44 +6,35 @@ const Section1 = () => {
     const faqData = [
         {
             id:1,
-            title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. ?',
-            desc:' Nam, ratione vel. Error saepe cumque sapiente dolorum alias provident aliquam quis voluptate, omnis blanditiis eum sequi maxime accusantium commodi deserunt eveniet?.'
+            title:'What is Stylin, and how can I benefit from it',
+            desc:"Stylin is a revolutionary platform that bridges the gap between beauty salon professionals and customers leveraging technology and aiming for high convenience. If you are a salon professional, It’s a platform that highly elevates your salon’s digital presence and if you are a customer, it’s a one-stop personalised beauty curated platform for all your beauty needs. "
         },
         {
             id:2,
-            title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. ?',
-            desc:' Nam, ratione vel. Error saepe cumque sapiente dolorum alias provident aliquam quis voluptate, omnis blanditiis eum sequi maxime accusantium commodi deserunt eveniet?.'
+            title:' How can I access the beta version of the Stylin app?',
+            desc:"Simply provide your details, and we'll send you exclusive access to our beta app, giving you a sneak peek into the future of beauty experiences."
         },
         {
             id:3,
-            title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. ?',
-            desc:' Nam, ratione vel. Error saepe cumque sapiente dolorum alias provident aliquam quis voluptate, omnis blanditiis eum sequi maxime accusantium commodi deserunt eveniet?.'
+            title:'Can I make salon bookings through Stylin?',
+            desc:"Currently, Stylin is an informative platform. We're working on the app with exciting features, including bookings. Stay tuned for updates! Download the beta version and provide valuable feedback. "
         },
         {
             id:4,
-            title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. ?',
-            desc:' Nam, ratione vel. Error saepe cumque sapiente dolorum alias provident aliquam quis voluptate, omnis blanditiis eum sequi maxime accusantium commodi deserunt eveniet?.'
+            title:' Is there a cost for listing my salon on Stylin?',
+            desc:"No, listing your salon on Stylin is currently free. We believe in empowering salons of all sizes with digital visibility."
         },
         {
             id:5,
-            title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. ?',
-            desc:' Nam, ratione vel. Error saepe cumque sapiente dolorum alias provident aliquam quis voluptate, omnis blanditiis eum sequi maxime accusantium commodi deserunt eveniet?.'
+            title:'What kind of support does Stylin provide to salon partners?',
+            desc:"Stylin offers support throughout the onboarding process and beyond. We're here to answer questions, provide guidance, and ensure your salon thrives on our platform."
         },
         {
             id:6,
-            title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. ?',
-            desc:' Nam, ratione vel. Error saepe cumque sapiente dolorum alias provident aliquam quis voluptate, omnis blanditiis eum sequi maxime accusantium commodi deserunt eveniet?.'
+            title:'Is my information secure when I sign up for the beta version?',
+            desc:" Absolutely! We take privacy seriously. Your information is securely stored and will only be used for communication-related to the Stylin app. "
         },
-        {
-            id:7,
-            title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. ?',
-            desc:' Nam, ratione vel. Error saepe cumque sapiente dolorum alias provident aliquam quis voluptate, omnis blanditiis eum sequi maxime accusantium commodi deserunt eveniet?.'
-        },
-        {
-            id:8,
-            title:'Lorem ipsum dolor sit amet consectetur adipisicing elit. ?',
-            desc:' Nam, ratione vel. Error saepe cumque sapiente dolorum alias provident aliquam quis voluptate, omnis blanditiis eum sequi maxime accusantium commodi deserunt eveniet?.'
-        },
+        
     ]
   return (
     <div>

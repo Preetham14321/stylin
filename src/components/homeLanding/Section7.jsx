@@ -1,5 +1,6 @@
 import React from 'react'
 import Sec7hero from '../../assets/svg/sec7hero.svg'
+import { Link } from 'react-router-dom'
 
 const Section7 = () => {
   return (
@@ -14,9 +15,12 @@ const Section7 = () => {
         <p className="text-white lg:text-lg lg:leading-[28px] font-mukta lg:py-4">
         Create a visual feast of creative beauty content with <br /> short videos, live shows, and workshops. Beauty, <br /> Makeup and Style creators can collaborate with brands, <br /> and salons can showcase their expertise enhancing the <br /> customer’s short video experience.
         </p>
+        <Link to="/feature/styleStu">
+
         <button className="bg-white lg:px-8 lg:py-2 text-[#F43F5E] font-lexend rounded-[4px] lg:mt-5">
           Learn More
         </button>
+        </Link>
       </div>
     </main>
   )

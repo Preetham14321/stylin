@@ -12,6 +12,12 @@ import About from "./pages/About";
 import FAQ from "./pages/FAQ";
 import ScrollToTop from "./components/ScrollToTop";
 import BlogEntry from "./components/blogs/blogentry/BlogEntry";
+import OnlineServ from "./components/features/OnlineServ";
+import AiandArServ from "./components/features/AiandArServ";
+import SalonMang from "./components/features/SalonMang";
+import StylinAca from "./components/features/StylinAca";
+import StyleStu from "./components/features/StyleStu";
+import BeautySto from "./components/features/BeautySto";
 
 
 function App() {
@@ -39,9 +45,15 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/team" element={<Team/>} />
         <Route path="/faq" element={<FAQ/>} />
-        <Route path="/blogs" element={<Blogs/>} />x
-        <Route path="/blog/Entry" element={<BlogEntry/>} />x
-        {/* Add more routes for your components/pages */}
+        <Route path="/blogs" element={<Blogs/>} />
+        <Route path="/blog/Entry" element={<BlogEntry/>} />
+        <Route path="/feature/onlineservice" element={<OnlineServ/>} />
+        <Route path="/feature/aiandarservice" element={<AiandArServ/>} />
+        <Route path="/feature/salonservice" element={<SalonMang/>} />
+        <Route path="/feature/stylinacad" element={<StylinAca/>} />
+        <Route path="/feature/styleStu" element={<StyleStu/>} />
+        <Route path="/feature/beautySto" element={<BeautySto/>} />
+        
   </Routes>
   </ScrollToTop>
   </BrowserRouter>
