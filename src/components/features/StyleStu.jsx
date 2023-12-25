@@ -21,7 +21,7 @@ const StyleStu = () => {
             sec2Pair:[
                 {
                     id:1,
-            title:"Stylin Description",
+            title:"Beauty Unleashed Together",
             des:"Discover, engage, and be inspired as creators and salons unfold a visual spectacle designed to enhance your beauty experience.",
            bullPoint:[
         'Visual Feast of Creativity',

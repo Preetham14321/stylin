@@ -21,7 +21,7 @@ const BeautySto = () => {
             sec2Pair:[
                 {
                     id:1,
-            title:"Stylin Description",
+            title:"Glamour in Cart",
             des:"Embark on a glamorous journey with Stylin Beauty Store Where Every Product is a Chapter in Your Glamorous Tale.",
            bullPoint:[
         'Discover Trends, Define Style',

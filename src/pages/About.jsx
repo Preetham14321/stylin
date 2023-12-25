@@ -9,7 +9,7 @@ const About = () => {
   return (
     <main className="">
         <Navheader custClass='bg-white text-[#020202]'/>
-        <div className="lg:px-20 lg:py-44 ">
+        <div className="lg:px-20 lg:pb-32 lg:pt-32 ">
         
             <Section1/>
         </div>

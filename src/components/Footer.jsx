@@ -39,7 +39,7 @@ const Footer = () => {
         {
             id:2,
             name:'Write to us',
-            link:'/writeus'
+            link:'/writetous'
         },
         {
             id:3,
@@ -55,7 +55,7 @@ const Footer = () => {
         {
             id:1,
             name:'List your Brand',
-            link:'/llst'
+            link:'/listyourbrand'
         },
         {
             id:2,
@@ -144,7 +144,11 @@ const Footer = () => {
     {joinStyData.map((item,key)=>(
         <ul>
             <li className=" text-[17px] lg:text-2xl font-semibold">{item.title}</li>
+            <Link to={item.link}>
+
             <li className="text-[15px] w-max lg:text-lg">{item.name}</li>
+            </Link>
+
         </ul>
     ))}
     </div>

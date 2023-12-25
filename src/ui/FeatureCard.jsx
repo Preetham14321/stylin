@@ -17,7 +17,7 @@ const FeatureCard = ({ sec1Data }) => {
             ))}
         </div>
         <div className="flex flex-1"></div>
-        <div className="w-full"></div>
+          <img src={sec1Data[0].img} alt="" className="lg:w-[40%] h-  rounded-xl" />
       </div>
 
       {/* -------- Section -2 ----------- */}
@@ -48,11 +48,11 @@ const FeatureCard = ({ sec1Data }) => {
       <div className="lg:py-32 space-y-10  ">
         {sec1Data[2].conDes.map((item, key) => (
           <div
-            className={`flex  ${
+            className={`flex items-center  ${
               (item.id && key + 1) % 2===0 ? "flex-row-reverse" : ""
-            } lg:py-20 `}
+            } lg:py-20`}
           >
-            <div className="w-full"></div>
+            <img src={item.img} alt="" className="w-[45%] rounded-xl" />
 
             <div className="flex flex-1"></div>
             <div className="">

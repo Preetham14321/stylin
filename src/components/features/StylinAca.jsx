@@ -22,7 +22,7 @@ const StylinAca = () => {
             sec2Pair:[
                 {
                     id:1,
-            title:"Stylin Description",
+            title:"Learning Beauty Mastery",
             des:"STYLIN Academy is a transformative space designed to elevate skills, empower professionals, and foster a community passionate about beauty.",
            bullPoint:[
             'Comprehensive & Advanced Courses By Top-Notch Experts',

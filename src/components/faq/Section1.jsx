@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-const Section1 = () => {
+const Section1 = ({custClass}) => {
     const [activeFaq, setActiveFaq] = useState(1)
 
     const faqData = [
@@ -38,16 +38,19 @@ const Section1 = () => {
     ]
   return (
     <div>
+        <div className={`${custClass}`}>
+
         <h1 className="w-full text-center font-lexend font-semibold text-[#020202] text-lexend lg:text-6xl lg:leading-[1.5]">Frequently Asked <br /> Questions</h1>
         
         <p className="text-center font-mutka lg:text-xl text-[#020202] lg:pt-5 lg:pb-28">
         Lorem ipsum dolor sit amet consectetur. Scelerisque ultricies dignissim sit <br /> donec nisl semper tristique a quis est ut est nec ac.
         </p>
+        </div>
 
         {faqData.map((item,key)=>(
 
 
-        <div className="bg-[#F7F6F6] lg:px-6 lg:py-4 lg:mx-72 lg:mb-3 cursor-pointer" onClick={()=>{
+        <div className="bg-[#F7F6F6] rounded-lg lg:px-6 lg:py-4 lg:mx-72 lg:mb-3 cursor-pointer" onClick={()=>{
             setActiveFaq(key+1)
         }}>
 
@@ -62,7 +65,7 @@ const Section1 = () => {
         ))}
 
 
-        <div className="flex flex-col justify-center m-auto  items-center w-full lg:pt-14">
+        <div className={`${custClass} flex flex-col justify-center m-auto  items-center w-full lg:pt-14`}>
             <div className="">
 
             <h2 className="text-[#020202] font-lexend font-semibold lg:text-3xl  ">   Have any other questions?   </h2>

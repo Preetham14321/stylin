@@ -22,8 +22,8 @@ const OnlineServ = () => {
             sec2Pair:[
                 {
                     id:1,
-                    title:'Booking is made easy and user-friendly for all of our STYLIN customers.',
-                    des:'',
+                    title:'Flawless Beauty Reservations',
+                    des:'Booking is made easy and user-friendly for all of our STYLIN customers.',
                    bullPoint:[
                     'Real-time Instant booking ',
                     'Convenience in Time Slots & Dates',

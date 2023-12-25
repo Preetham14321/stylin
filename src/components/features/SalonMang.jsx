@@ -2,13 +2,18 @@ import React from 'react'
 import Navheader from '../Navheader'
 import FeatureCard from '../../ui/FeatureCard'
 import Footer from '../Footer'
-
+import Sm1 from '../../assets/features/sm1.png'
+import Sm2 from '../../assets/features/sm2.png'
+import Sm3 from '../../assets/features/sm3.png'
+import Sm4 from '../../assets/features/sm4.png'
+import Sm5 from '../../assets/features/sm5.png'
 const SalonMang = () => {
 
     const salonServ = [
         {
             id:1,
             title:"Stylin Salon Suite - Elevate Your Salon Management Experience for Free",
+            img:Sm1,
             des:[
                 {
                     id:1,
@@ -41,21 +46,27 @@ const SalonMang = () => {
             conDes:[
                 {
                     id:1,
+                    img:Sm2,
                     title:'Appointment Scheduling',
                     des:"Stylin's intuitive appointment scheduling tool empowers salon owners to manage bookings seamlessly. From client preferences to stylist availability, it's a breeze to organize appointments, ensuring a smooth and satisfying customer experience."
                 },
                 {
                     id:2,
+                    img :Sm3,
                     title:'Inventory Tracking & Management',
                     des:"We take the hassle out of inventory management. Keep a real-time check on product availability, streamline restocking, and maximize profits. With our tool, salon owners can maintain a well-stocked and organized inventory effortlessly."
                 },
                 {
                     id:3,
+                    img :Sm4,
+
                     title:'Reports & Data Analytics',
                     des: "We provide salon owners with powerful data analytics tools. Dive into comprehensive reports on customer trends, popular services, and financial insights. Make informed decisions to optimize operations and enhance the overall performance of your salon."
                 },
                 {
                     id:4,
+                    img :Sm5,
+
                     title:"Virtual Try-Ons ",
                     des:"Stylin's AR Virtual Try-On feature redefines the salon experience. Users can virtually try on a spectrum of hairstyles and services at your salon, ensuring they make confident and personalized choices before stepping into the salon. This increases customer satisfaction and enthusiasm to visit the salon again. "
                 },

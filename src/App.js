@@ -18,6 +18,11 @@ import SalonMang from "./components/features/SalonMang";
 import StylinAca from "./components/features/StylinAca";
 import StyleStu from "./components/features/StyleStu";
 import BeautySto from "./components/features/BeautySto";
+import Contactus from "./pages/Contactus";
+import Writetous from "./pages/Writetous";
+import ListyourBrand from "./pages/ListyourBrand";
+import Collab from "./pages/Collab";
+import Careers from "./pages/Careers";
 
 
 function App() {
@@ -45,6 +50,11 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/team" element={<Team/>} />
         <Route path="/faq" element={<FAQ/>} />
+        <Route path="/contactus" element={<Contactus/>} />
+        <Route path="/writetous" element={<Writetous/>} />
+        <Route path="/listyourbrand" element={<ListyourBrand/>} />
+        <Route path="/collab" element={<Collab/>} />
+        <Route path="/careers" element={<Careers/>} />
         <Route path="/blogs" element={<Blogs/>} />
         <Route path="/blog/Entry" element={<BlogEntry/>} />
         <Route path="/feature/onlineservice" element={<OnlineServ/>} />
