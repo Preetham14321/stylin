@@ -84,16 +84,23 @@ const toggleMobileMenu = () => {
                 {item.name}
               </Link>
             ))}
+            <Link to="/business">
+
             <button className=" lg:hidden  gradButton text-white px-5 py-1.5 text-xl font-semibold rounded-md ">
-Book Free Demo
+            For Business
 </button>
+            </Link>
           </div>
         </div>
       )}
 </div>
+<Link to="/business">
+
 <button className=" hidden lg:flex gradButton text-white lg:px-5 lg:py-1.5 font-semibold rounded-md ">
-Book Free Demo
+For Business
 </button>
+</Link>
+
     </header>
   )
 }

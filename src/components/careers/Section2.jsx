@@ -1,5 +1,5 @@
 import React from 'react'
-import Career2 from '../../assets/basic/carrer2.png'
+import Career2 from '../../assets/basic/careers/img2.png'
 const Section2 = () => {
   return (
     <div className='flex gap-40 '>

@@ -11,7 +11,7 @@ listData.map((item,key)=>(
     {/* <div className=" border-[2px] rounded-xl  border-solid  animate-danceborder-blinking"> */}
     <div className="">
 
-    <img src={ListBrandHero} alt="" className='w-80' />
+    <img src={item.img} alt="" className='w-80' />
     <div className="p-3 space-y-2">
       <h3 className="tont-lexend text-lg font-semibold text-[#020202]">
         {item.title}

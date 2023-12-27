@@ -23,6 +23,11 @@ import Writetous from "./pages/Writetous";
 import ListyourBrand from "./pages/ListyourBrand";
 import Collab from "./pages/Collab";
 import Careers from "./pages/Careers";
+import HelpandSupport from "./pages/HelpandSupport";
+import Business from "./pages/Business";
+import Featured from "./pages/Featured";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import Privacy from "./pages/Privacy";
 
 
 function App() {
@@ -52,8 +57,14 @@ function App() {
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/contactus" element={<Contactus/>} />
         <Route path="/writetous" element={<Writetous/>} />
-        <Route path="/listyourbrand" element={<ListyourBrand/>} />
         <Route path="/collab" element={<Collab/>} />
+        <Route path="/business" element={<Business/>} />
+        <Route path="/listyourbrand" element={<ListyourBrand/>} />
+        <Route path="/support" element={<HelpandSupport/>} />
+        <Route path="/featured" element={<Featured/>} />
+        <Route path="/privacy" element={<Privacy/>} />
+        <Route path="/terms" element={<TermsAndConditions/>} />
+
         <Route path="/careers" element={<Careers/>} />
         <Route path="/blogs" element={<Blogs/>} />
         <Route path="/blog/Entry" element={<BlogEntry/>} />

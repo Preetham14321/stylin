@@ -11,7 +11,7 @@ const FeatureCard = ({ sec1Data }) => {
           </h2>
           {sec1Data &&
             sec1Data[0].des.map((item, key) => (
-              <p className="font-mukta pr-52 lg:text-2xl text-[rgba(102,105,105,1)] lg:leading-[1.7]">
+              <p className="font-mukta pr-48 lg:text-2xl text-[rgba(102,105,105,1)] lg:leading-[1.7]">
                 {item.des}
               </p>
             ))}
@@ -23,11 +23,12 @@ const FeatureCard = ({ sec1Data }) => {
       {/* -------- Section -2 ----------- */}
 {sec1Data&&sec1Data[1].sec2Pair.map((item,key)=>(
 
-      <div className={`flex lg:pt-40  lg:pb- ${item.hidSec?'hidden':''}  `}>
-        <div className="w-full"></div>
-        <div className="flex flex-1"></div>
-        <div className="space-y-7  ">
-          <h2 className="lg:text-4xl w-[50rem] font-semibold lg:leading-[1.4] font-lexend text-[#020202]">
+      <div className={`flex  gap-10 lg:pt-40  lg:pb- ${item.hidSec?'hidden':''}  `}>
+        <div className="w-full">
+          <img src={item.img} alt="" className="lg:w-[90%] rounded-xl" />
+        </div>
+        <div className="space-y-7 w-full ">
+          <h2 className="lg:text-4xl font-semibold lg:leading-[1.4] font-lexend text-[#020202]">
             {item.title}
           </h2>
           <p className=" w-  lg:text-lg lg:leading-[1.7]">{item.des}</p>
@@ -56,7 +57,7 @@ const FeatureCard = ({ sec1Data }) => {
 
             <div className="flex flex-1"></div>
             <div className="">
-              <h2 className="lg:text-4xl font-bold font-lexend">
+              <h2 className="lg:text-4xl w-[80%] font-bold font-lexend">
                 {item.title}
               </h2>
               <div className="space-y-5 pt-7">

@@ -2,17 +2,19 @@ import React from 'react'
 import Navheader from '../Navheader'
 import FeatureCard from '../../ui/FeatureCard'
 import Footer from '../Footer'
-import Sm1 from '../../assets/features/sm1.png'
-import Sm2 from '../../assets/features/sm2.png'
-import Sm3 from '../../assets/features/sm3.png'
-import Sm4 from '../../assets/features/sm4.png'
-import Sm5 from '../../assets/features/sm5.png'
+import Sm1 from '../../assets/features/salonMan/sm1.png'
+import Sm2 from '../../assets/features/salonMan/sm2.jpg'
+import Sm3 from '../../assets/features/salonMan/sm3.png'
+import Sm4 from '../../assets/features/salonMan/sm4.png'
+import Sm5 from '../../assets/features/salonMan/sm5.png'
+import Sm6 from '../../assets/features/salonMan/sm6.png'
+import Sm7 from '../../assets/features/salonMan/sm7.png'
 const SalonMang = () => {
 
     const salonServ = [
         {
             id:1,
-            title:"Stylin Salon Suite - Elevate Your Salon Management Experience for Free",
+            title:" Stylin Salon Suite - Upgrade Your Salon Management for Free",
             img:Sm1,
             des:[
                 {
@@ -72,11 +74,13 @@ const SalonMang = () => {
                 },
                 {
                     id:5,
+                    img:Sm6,
                     title:"Smart Marketing",
                     des:"Our marketing arsenal goes beyond the ordinary. Leverage automated email and text marketing for targeted outreach. Keep clients engaged with notification reminders, and elevate salons to stardom by exclusive featuring of trending services. Short video Marketing exclusively for Stylin Partners through short videos, live workshops, events & contests. "
                 },
                 {
                     id:6,
+                    img:Sm7,
                     title:"Secure Customer Payment Processing",
                     des:"Trustworthy Transactions, Every Time. Stylin ensures the security of customer transactions with robust and secure payment processing methods. From bookings to product purchases, salon owners can rely on us to provide a seamless and secure financial experience for their clients."
                 }

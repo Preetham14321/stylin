@@ -12,6 +12,7 @@ const CareerCard = ({jobData}) => {
        {item.title}
         </h1>
         <p className="text-[#474949] font-medium">{item.open}</p>
+        <p className="text-[#bda83f] cursor-pointer selection: font-bold">{`Apply Now > `}</p>
     </div>
 
         ))

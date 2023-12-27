@@ -11,13 +11,13 @@ const Section4 = () => {
             id:1,
             logo:FaBusinessTime,
             title:"Business Analytics",
-            open:"7 Open"
+            open:"3 Open"
         },
         {
             id:2,
             logo:CiGlobe,
             title:"Web & App Development",
-            open:"10 Open"
+            open:"3 Open"
         },
         {
             id:3,
@@ -29,25 +29,25 @@ const Section4 = () => {
             id:4,
             logo:TbBulb,
             title:"Product Management ",
-            open:"6 open"
+            open:"4 open"
         },
         {
             id:5,
             logo:IoMdSettings,
             title:"AI, ML & DL Tech Development",
-            open:"20 Open"
+            open:"5 Open"
         },
         {
             id:6,
             logo:CiBank ,
             title:"Finances & Accounts ",
-            open:"4 Open"
+            open:"3 Open"
         },
         {
             id:7,
             logo:FaSearch ,
             title:"Research, Marketing & Sales",
-            open:"No Openings"
+            open:"5 Open"
         }
     ]
   return (

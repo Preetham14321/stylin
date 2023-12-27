@@ -1,5 +1,5 @@
 import React from 'react'
-import Carrer1 from '../../assets/basic/carrer1.png'
+import Carrer1 from '../../assets/basic/careers/img1.png'
 
 const Section1 = () => {
   return (

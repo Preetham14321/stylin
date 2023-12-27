@@ -2,7 +2,7 @@ import React, { useState, useEffect,useRef } from "react";
 
 const Counter 
 
-= ({ initialValue, finalValue }) => {
+= ({ initialValue, finalValue,title }) => {
   const [count, setCount] = useState(initialValue);
   const digits = count.toString().split('').map(Number);
 
@@ -32,7 +32,7 @@ const Counter
   const startCounting = () => {
     const interval = setInterval(() => {
       setCount((prevCount) => (prevCount < finalValue ? prevCount + 1 : finalValue));
-    }, 50); // Adjust the interval as needed
+    }, 10); // Adjust the interval as needed
 
     return () => clearInterval(interval);
   };
@@ -45,9 +45,9 @@ const Counter
     "
     >
       <div className="number-counter font-lexend">
-        <span className="lg:text-[100px] font-semibold">{count}</span>
+        <span className="lg:text-[100px] font-semibold">{count}+</span>
         <p className="text-[#202020] lg:text-xl font-mutka">
-          Lorem ipsum dolor <br /> amet consectetur.
+        {title}
         </p>
       </div>
       {/* <div className="number-counter">
@@ -69,9 +69,9 @@ const Counter
 const Section9 = () => {
   return (
     <div className="flex justify-around items-center bg-white">
-      <Counter initialValue={0} finalValue={100} />
-      <Counter initialValue={50} finalValue={150} />
-      <Counter initialValue={25} finalValue={75} />
+      <Counter title='partner businesses' initialValue={0} finalValue={100} />
+      <Counter title='active users' initialValue={1200} finalValue={1500} />
+      <Counter title='cities' initialValue={25} finalValue={75} />
     </div>
   );
 };

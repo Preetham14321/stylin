@@ -2,30 +2,35 @@ import React from 'react'
 import Navheader from '../components/Navheader'
 import ListCard from '../ui/ListCard'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
+import img1 from '../assets/basic/brand/img1.png'
+import img2 from '../assets/basic/brand/img2.png'
+import img3 from '../assets/basic/brand/img3.png'
+import img4 from '../assets/basic/brand/img4.png'
 
 const ListyourBrand = () => {
     const listData =[
         {
             id:1,
-            img:'',
+            img:img1,
             title:'Digital Excellence',
             des:"Elevate your salon's digital presence effortlessly. Stylin brings your brand to the fingertips of beauty enthusiasts in your area."
         },
         {
             id:2,
-            img:'',
+            img:img2,
             title : 'Virtual Showcase',
             des:"With Stylin, your salon isn't just a listing; it's a virtual showcase. Feature your services, talented stylists, and the unique atmosphere that sets your salon apart."
         },
         {
             id:2,
-            img:'',
+            img:img3,
             title : 'Engage with Enthusiasts',
             des:"Connect directly with potential clients. Stylin opens a two-way street, allowing beauty enthusiasts to discover your salon and providing you with the platform to engage and captivate."
         },
         {
             id:2,
-            img:'',
+            img:img4,
             title : 'Boost Your Business',
             des:" List your salon and attain a boost for your business. Increase visibility, attract new clients, and watch your salon thrive in the digital beauty landscape."
         },
@@ -54,7 +59,20 @@ const ListyourBrand = () => {
         <div className="m-auto w-  flex justify-center">
             <ListCard listData={listData}/>
         </div>
-      
+      <div className="flex flex-col items-center space-y-4 py-20 ">
+        <h4 className="font-mukta  lg:text-2xl text-[#606063] font-semibold text-center">
+        Ready to make your salon a sensation? List your brand with Stylin and let the beauty unfold!
+
+
+        </h4>
+        <Link to='/business'>
+
+        <button className="  gradButton text-white lg:px-5 lg:py-1.5 font-semibold rounded-md ">
+
+         Sign Up
+</button>
+        </Link>
+      </div>
         </div>
         <Footer/>
     </main>

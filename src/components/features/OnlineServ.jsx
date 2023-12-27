@@ -2,6 +2,11 @@ import React from 'react'
 import Navheader from '../Navheader'
 import FeatureCard from '../../ui/FeatureCard'
 import Footer from '../Footer'
+import img1 from '../../assets/features/onlineSer/onlinebooking1.png'
+import img2 from '../../assets/features/onlineSer/onlinebooking2.png'
+import img3 from '../../assets/features/onlineSer/onlineBooking3.jpg'
+import img4 from '../../assets/features/onlineSer/onlineBooking4.png'
+import img5 from '../../assets/features/onlineSer/onlinebooking5.png'
 
 const OnlineServ = () => {
 
@@ -9,6 +14,8 @@ const OnlineServ = () => {
         {
             id:1,
             title:'Online Service Booking',
+            img:img1,
+
             des:[
                 {
                     id:1,
@@ -22,6 +29,7 @@ const OnlineServ = () => {
             sec2Pair:[
                 {
                     id:1,
+                    img:img2,
                     title:'Flawless Beauty Reservations',
                     des:'Booking is made easy and user-friendly for all of our STYLIN customers.',
                    bullPoint:[
@@ -44,16 +52,19 @@ const OnlineServ = () => {
                 {
                     id:1,
                     title:'Elevate Your Glamour',
+                    img:img3,
                     des:'From classic styles to avant-garde transformations, discover and book services that reflect your unique style.'
                 },
                 {
                     id:2,
                     title:'Seamless Convenience',
+                    img:img4,
                     des:'Navigate a world where booking beauty is as easy as expressing it. Our user-friendly platform ensures a smooth and interactive experience, empowering you to schedule your glow at your convenience.'
                 },
                 {
                     id:3,
                     title:'Personalized Perfection',
+                    img:img5,
                     des:"STYLIN's innovative AI understands your beauty desires, recommending services tailored to your preferences. Your journey with us is a celebration of your individuality. "
                 }
             ]

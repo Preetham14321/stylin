@@ -19,7 +19,7 @@ const teamData = [
         id:2,
         img:img2,
         name: 'Sai Priya',
-        role:'Product Manager/Beautician'
+        role:'Product Manager/MUA'
     },
     {
         id:3,
@@ -42,8 +42,8 @@ const teamData = [
     {
         id:6,
         img:img6,
-        name: 'Sharat Chandra',
-        role:'AI Engineer'
+        name: 'Sarath Chandra',
+        role:'AI Developer'
     },
     {
         id:7,

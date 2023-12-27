@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Sec5hero from "../../assets/svg/sec5hero.svg";
 
 const Section5 = () => {
   return (
-    <div className='bg-[#EF5DA8]  h-[460px] lg:pt-16 lg:px-12 lg:mx-28'>
+    <div   className=" h-[460px]  lg:mx-28 lg:pt-24 lg:px-12   lg:bg-none  lg:flex justify-between   bg-no-repeat bg-cover  "
+    style={{ backgroundImage: `url(${Sec5hero})` }}>
  
 
 <div className="">

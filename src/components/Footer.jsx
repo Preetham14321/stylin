@@ -1,6 +1,6 @@
 import React from 'react'
 import heroSmallIc from '../assets/svg/heroSmIc.svg'
-import { FaInstagram,FaLinkedinIn  } from "react-icons/fa";
+import { FaInstagram,FaLinkedinIn ,FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -17,14 +17,10 @@ const Footer = () => {
         },
         {
             id:2,
-            name:'Achievements ',
-            link:'/achievements '
+            name:'Featured ',
+            link:'/featured '
         },
-        {
-            id:3,
-            name:'Featured',
-            link:'/featured'
-        },
+     
     ]
 
     const helpCenData = [
@@ -39,13 +35,9 @@ const Footer = () => {
         {
             id:2,
             name:'Write to us',
-            link:'/writetous'
+            link:'/featured'
         },
-        {
-            id:3,
-            name:'FAQs',
-            link:'/faq'
-        }
+         
     ]
 
     const joinStyData = [
@@ -108,14 +100,31 @@ const Footer = () => {
 
      <p className="">+91 86880 55328</p>
      <div className=" flex items-center gap-2">
+     <a href="https://www.instagram.com/stylinofficial_/" target="_blank" rel="noopener noreferrer">
+
      <FaInstagram />
+     </a>
+     <a href="https://www.linkedin.com/company/stylin-official" target="_blank" rel="noopener noreferrer">
+
      <FaLinkedinIn  />
+     </a>
+
+     <a href="http://www.youtube.com/@stylin_media" target="_blank" rel="noopener noreferrer">
+
+     <FaYoutube/>
+     </a>
+
      </div>
 </div>
 
 </div>
 
      <p className=" hidden lg:block text-sm lg:pt-1">©2023 STYLIN All rights reserved.</p>
+     <p className="text-white">
+
+     Image by <a href="https://www.freepik.com/free-photo/new-year-banner-with-fireworks_33746905.htm#query=new%20years%20day&position=0&from_view=keyword&track=ais&uuid=333d02d6-e642-4feb-ba96-149576eb9397">Freepik</a>
+     </p>
+
    </div>
 
  <div className="text-white grid grid-cols-2 lg:flex gap-y-10 gap-x-12 lg:gap-20 lg:pr-7 ">
@@ -124,7 +133,10 @@ const Footer = () => {
     {mediaData.map((item,key)=>(
         <ul>
             <li className="text-[17px] lg:text-2xl font-semibold">{item.title}</li>
+            <Link to={item.link}>
             <li className="text-[15px] w-max lg:text-lg">{item.name}</li>
+            </Link>
+      
         </ul>
     ))}
    </div>
@@ -157,13 +169,18 @@ const Footer = () => {
     {downloadData.map((item,key)=>(
         <ul>
             <li className="text-[17px] lg:text-2xl font-semibold">{item.title}</li>
+            <Link to={item.link}>
+           
             <li className="text-[15px] w-max lg:text-lg">{item.name}</li>
+            </Link>
+      
         </ul>
     ))}
 
  </div>
  </div>
  <p className=" lg:hidden w-full text-white text-center text-sm pb-3 pt-10">©2023 STYLIN All rights reserved.</p>
+ 
 
 
     </footer>

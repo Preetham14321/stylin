@@ -2,12 +2,18 @@ import React from 'react'
 import Navheader from '../Navheader'
 import FeatureCard from '../../ui/FeatureCard'
 import Footer from '../Footer'
+import img1 from '../../assets/features/aiar/img1.jpg'
+import img2 from '../../assets/features/aiar/img2.png'
+import img3 from '../../assets/features/aiar/img3.jpg'
+import img4 from '../../assets/features/aiar/img4.png'
+
 
 const AiandArServ = () => {
     const aiandServ = [
         {
             id:1,
             title:'AI Sees you, AR Shows you! ',
+            img:img1,
             des:[
                 {
                     id:1,
@@ -21,6 +27,7 @@ const AiandArServ = () => {
             sec2Pair:[
                 {
                     id:1,
+                    img:img2,
             title:"Unleash Your Unique Beauty with STYLIN's AI Analyzer",
             des:"This is not just a tool; it's your personal beauty curator. Let our innovative AI decode your style, understand your desires, and recommend services that resonate with your individuality. Stylin's AI Analyser can be extremely innovative and is designed to cure your personalised skin or hair concerns.",
            bullPoint:[
@@ -32,6 +39,7 @@ const AiandArServ = () => {
         },
                 {
                     id:2,
+                    img:img3,
             title:"AR Virtual Try-On, Virtually Real",
             des:"Immerse yourself in a world where your dream look is just a tap away. With STYLIN's Virtual Try-On, experimenting with endless styles is not just a try; it's an adventure into self-expression. Stylin's Virtual Try-On to find your best suitable look effortlessly for 100% customer  ",
            bullPoint:[
@@ -48,6 +56,7 @@ const AiandArServ = () => {
             conDes:[
                 {
                     id:1,
+                    img:img4,
                     title:'Beyond Trends, Your Signature Style',
                     des:"Our AI doesn't just follow trends; it understands the essence of your style. Our AR shows you the best possible look that suits you and enhances your confidence.Experience beauty that goes beyond the ordinary, celebrating your unique signature in every recommendation and trial."
                 },

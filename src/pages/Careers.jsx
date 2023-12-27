@@ -17,7 +17,7 @@ const Careers = () => {
     </div>
     
      <Section2/>
-     <div className="py-40">
+     <div className="py-20">
         <Section3/>
      </div>
     </div>
