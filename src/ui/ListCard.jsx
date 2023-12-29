@@ -1,5 +1,4 @@
 import React from 'react'
-import ListBrandHero from '../assets/basic/listBrand.png'
 const ListCard = ({listData}) => {
   return (
     <div className="grid grid-cols-2 gap-20  justify-center    ">

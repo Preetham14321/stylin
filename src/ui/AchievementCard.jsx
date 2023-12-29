@@ -1,5 +1,4 @@
 import React from 'react'
-import ListBrandHero from '../assets/basic/listBrand.png'
 
 const AchievementCard = ({achievData=[]}) => {
   return (

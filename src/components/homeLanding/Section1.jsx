@@ -1,10 +1,11 @@
 import React from "react";
 import HeroBgV from "../../assets/video/BrushSparkle.mp4";
+import HeroImg from '../../assets/svg/herosectionimg.svg'
 
 const Section1 = () => {
   return (
-    <main className=" lg:h-screen   relative " style={{ backgroundClip: `url(${HeroBgV})` }}>
-      <video autoPlay muted loop playsInline className=" mt-14 lg:mt-0 lg:h-fit">
+    <main className=" lg:h -screen w-full   relative " style={{ backgroundClip: `url(${HeroBgV})` }}>
+      <video autoPlay muted loop playsInline poster={HeroImg} className=" w-full mt-14 lg:mt-0 lg:h-fit">
         <source src={HeroBgV} type="video/mp4" />
        
         Your browser does not support the video tag.
@@ -12,8 +13,8 @@ const Section1 = () => {
 
       <div className="absolute top-0 flex flex-col justify-center lg:justify-start  h-40  w-full lg:px-32 lg:pt-32">
         <div className="">
-          <h1 className="text-white text-center lg:text-start mt-2 lg:mt-0 font-lexend lg:text-[4rem] lg:leading-[1.2] ">
-            <span className="lg:text-[7rem] font-bold">STYLE</span> <br className="hidden lg:block" />{" "}
+          <h1 className="text-white text-center lg:text-start mt-2 lg:mt-0 font-lexend lg:text-[3rem] xl:text-[4rem] lg:leading-[1.3] xl:leading-[1.2] ">
+            <span className="lg:text-[5rem] xl:text-[7rem] font-bold">STYLE</span> <br className="hidden lg:block" />{" "}
             STARTS WITH YOU!
           </h1>
         </div>

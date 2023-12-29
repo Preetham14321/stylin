@@ -17,7 +17,7 @@ const HomeLanding = () => {
    
 
   return (
-  <div className="bg-[#02 0202]  h-screen overflow-x-hidden ">
+  <div className="bg-[#02 0202] 2xl:w-[1700px] 2xl:m-auto 2xl:h h-  overflow-x-hidden ">
    <div className="z-50">
 
     <Navheader/>
@@ -37,7 +37,7 @@ const HomeLanding = () => {
 <div className=" ">
 
 {/* ----------- Online Services ----------------- */}
-<div className="bg-[#020202] lg:pt-20">
+<div className="bg-[#020202] lg:px-28 w-full lg:pt-20">
   <Section3/>
 </div>
 

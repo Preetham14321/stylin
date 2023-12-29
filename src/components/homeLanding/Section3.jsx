@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom'
 
 const Section3 = () => {
   return (
-  <main className=" h-[460px]  lg:mx-28 lg:pt-24 lg:px-12  lg:bg-none   bg-no-repeat bg-cover  "
+  <main className=" h-[460px]     lg:px-12     bg-center  bg-no-repeat bg-cover  "
  
   style={{ backgroundImage: `url(${Sec3Hero})` }} >
-    <h1 className="font-bold lg:text-5xl text-white font-lexend lg:leading-[1.2]"> Online Service <br /> Booking</h1>
+      <div className="flex flex-col justify-center h-full">
 
-    <p className="font-mukta lg:text-[20px] lg:leading-[28px] lg:py-3 text-white">
+    <h1 className="font-bold lg:text-3xl xl:text-4xl 2xl:text-5xl text-white font-lexend xl:leading-[1.2]"> Online Service <br /> Booking</h1>
+
+    <p className="font-mukta lg:text-lg xl:text-[20px] lg:leading-[28px] lg:py-3 text-white">
     Seamless Beauty at Your Fingertips: Style your schedule <br /> effortlessly with Stylin’s online booking magic. Beauty  <br /> appointments with reviews and price Comparisons are  <br /> on your way with just a tap.
     </p>
     <Link to='/feature/onlineservice'>
@@ -17,6 +19,7 @@ const Section3 = () => {
         Learn More
     </button>
     </Link>
+    </div>
   </main>
   )
 }

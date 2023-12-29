@@ -2,15 +2,17 @@ import React from "react";
 import Navheader from "../components/Navheader";
 import teamHero from "../assets/video/teams.mp4";
 import teamMobHero from '../assets/svg/teamMobHero.svg'
+import teamHeroImg from '../assets/svg/teamhero.svg'
+
 import Section1 from "../components/team/Section1";
 import Footer from "../components/Footer";
 const Team = () => {
   return (
-    <main className="">
+    <main className="2xl:w-[1700px] 2xl:m-auto">
       <Navheader  />
-        <div className="lg:h-screen relative ">
+        <div className="lg:h screen w-full relative ">
 
-          <video autoPlay muted loop playsInline className="hidden lg:block ">
+          <video autoPlay muted loop playsInline   className="hidden  lg:block ">
             <source src={teamHero} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -18,8 +20,9 @@ const Team = () => {
     <img src={teamMobHero} alt="" className="w-full" />
           </div>
 
+
           <div
-            className="absolute lg:bg-[rgba(32,32,32,0.82)] h-full lg:h-[114%] w-full top-0  flex justify-center  items-center pt-10"
+            className="absolute lg:bg-[rgba(32,32,32,0.82)]  h-full w-full top-0  flex justify-center  items-center pt-10"
             
           >
             <div className="lg:pb-40">

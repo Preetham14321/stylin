@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 const Section4 = () => {
   return (
     <main
-      className=" h-[460px]  lg:mx-28 lg:pt-24 lg:px-12   lg:bg-none  lg:flex justify-between   bg-no-repeat bg-cover  "
+      className=" h-[460px]  lg:mx-28 lg:px-8   xl:px-12   lg:bg-none  bg-no-repeat bg-center bg-cover  lg:flex justify-between   bg-no-repeat bg-cover  "
       style={{ backgroundImage: `url(${Sec4hero})` }}
     >
-      <div className="lg:pl-[27rem] lg:pt-20">
+      <div className="lg:pl-[40%] lg:pt-44">
         <h1 className="lg:text-3xl lg:leading-[44px] font-bold font-lexend text-white">
           your <br /> clients <br /> are <br /> going to <br /> google <br />{" "}
           you
         </h1>
       </div>
 
-      <div className="">
-        <h1 className="lg:text-[42px] lg:leading-[54px] text-white font-bold font-lexend">
+      <div className="flex flex-col justify-center h-full">
+        <h1 className="lg:text-3xl xl:text-4xl 2xl:text-[42px] xl:leading-[54px] text-white font-bold font-lexend">
           Salon Management <br /> Software
         </h1>
         <p className="text-white lg:text-lg lg:leading-[28px] font-mukta lg:py-4">
